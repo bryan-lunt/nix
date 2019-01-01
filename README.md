@@ -20,3 +20,21 @@ Nix is released under the LGPL v2.1
 
 This product includes software developed by the OpenSSL Project for
 use in the [OpenSSL Toolkit](http://www.OpenSSL.org/).
+
+
+### COMPILING ###
+
+dependancies:
+autotools
+gmake
+boost
+editline
+
+this source is a little weird; make sure editline is compiled
+and installed from source (https://github.com/troglobit/editline)
+with the parameters:
+./configure --prefix=/usr
+make SHLIB_LIBS=-lcurses
+sudo make install
+
+after installation, be sure to use sudo ldconfig to reload.
