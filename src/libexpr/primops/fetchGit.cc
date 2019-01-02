@@ -6,7 +6,7 @@
 #include "hash.hh"
 
 #include <sys/time.h>
-
+#include <sys/wait.h>
 #include <regex>
 
 #include <nlohmann/json.hpp>
