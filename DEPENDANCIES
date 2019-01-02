@@ -9,9 +9,9 @@ libtool
 pkg-config / pkgconf
 openssl
 sqlite3
-boost
+boost / boost-libs
 editline
-bash (helpful)
+bash 
 
 this source is a little weird; make sure editline is compiled
 and installed from source with the parameters:
@@ -23,3 +23,7 @@ sudo make install
 after installation, be sure to use sudo ldconfig to reload.
 
 make sure to run libtoolize before building all source pkgs
+
+BE WARNED: BASH IS NEEDED CURRENTLY DUE TO BASHISMS IN THE
+BUILD SCRIPTS LEFT THERE BY NIX DEVS. MAKE SURE TO RUN 
+SH SCRIPTS WITH BASH.
