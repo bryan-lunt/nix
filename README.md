@@ -23,24 +23,3 @@ use in the [OpenSSL Toolkit](http://www.OpenSSL.org/).
 
 
 ### COMPILING ###
-
-dependancies:
-bash
-autotools
-libtool
-pkg-config / pkgconf
-openssl
-sqlite3
-gmake
-boost
-editline (https://github.com/p01arst0rm/editline)
-
-this source is a little weird; make sure editline is compiled
-and installed from source with the parameters:
-./configure --prefix=/usr
-make SHLIB_LIBS=-lcurses
-sudo make install
-
-after installation, be sure to use sudo ldconfig to reload.
-
-make sure to run libtoolize before building all source pkgs
